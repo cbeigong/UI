@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53863F741B49117200116EF0 /* FantasyHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53863F731B49117200116EF0 /* FantasyHomeViewController.m */; };
+		53863F791B4912BF00116EF0 /* FantasyMessageCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53863F781B4912BF00116EF0 /* FantasyMessageCenterViewController.m */; };
+		53863F7C1B4912F100116EF0 /* FantasyDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53863F7B1B4912F100116EF0 /* FantasyDiscoverViewController.m */; };
+		53863F7F1B49131400116EF0 /* FantasyProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53863F7E1B49131400116EF0 /* FantasyProfileViewController.m */; };
 		538911AD1B455E4C00719557 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 538911AC1B455E4C00719557 /* Images.xcassets */; };
 		538911B01B455E4C00719557 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 538911AE1B455E4C00719557 /* LaunchScreen.xib */; };
 		538911BC1B455E4C00719557 /* FantasyWeiboTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 538911BB1B455E4C00719557 /* FantasyWeiboTests.m */; };
@@ -25,6 +29,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		53863F721B49117200116EF0 /* FantasyHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FantasyHomeViewController.h; sourceTree = "<group>"; };
+		53863F731B49117200116EF0 /* FantasyHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FantasyHomeViewController.m; sourceTree = "<group>"; };
+		53863F771B4912BF00116EF0 /* FantasyMessageCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FantasyMessageCenterViewController.h; sourceTree = "<group>"; };
+		53863F781B4912BF00116EF0 /* FantasyMessageCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FantasyMessageCenterViewController.m; sourceTree = "<group>"; };
+		53863F7A1B4912F100116EF0 /* FantasyDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FantasyDiscoverViewController.h; sourceTree = "<group>"; };
+		53863F7B1B4912F100116EF0 /* FantasyDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FantasyDiscoverViewController.m; sourceTree = "<group>"; };
+		53863F7D1B49131400116EF0 /* FantasyProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FantasyProfileViewController.h; sourceTree = "<group>"; };
+		53863F7E1B49131400116EF0 /* FantasyProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FantasyProfileViewController.m; sourceTree = "<group>"; };
 		5389119C1B455E4C00719557 /* FantasyWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FantasyWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		538911A01B455E4C00719557 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		538911AC1B455E4C00719557 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -115,6 +127,14 @@
 				538911C61B455F1A00719557 /* AppDelegate.h */,
 				538911C71B455F1A00719557 /* AppDelegate.m */,
 				538911C81B455F1A00719557 /* main.m */,
+				53863F721B49117200116EF0 /* FantasyHomeViewController.h */,
+				53863F731B49117200116EF0 /* FantasyHomeViewController.m */,
+				53863F771B4912BF00116EF0 /* FantasyMessageCenterViewController.h */,
+				53863F781B4912BF00116EF0 /* FantasyMessageCenterViewController.m */,
+				53863F7A1B4912F100116EF0 /* FantasyDiscoverViewController.h */,
+				53863F7B1B4912F100116EF0 /* FantasyDiscoverViewController.m */,
+				53863F7D1B49131400116EF0 /* FantasyProfileViewController.h */,
+				53863F7E1B49131400116EF0 /* FantasyProfileViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -218,8 +238,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53863F741B49117200116EF0 /* FantasyHomeViewController.m in Sources */,
 				538911CA1B455F1A00719557 /* main.m in Sources */,
+				53863F791B4912BF00116EF0 /* FantasyMessageCenterViewController.m in Sources */,
 				538911C91B455F1A00719557 /* AppDelegate.m in Sources */,
+				53863F7C1B4912F100116EF0 /* FantasyDiscoverViewController.m in Sources */,
+				53863F7F1B49131400116EF0 /* FantasyProfileViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +432,7 @@
 				538911C11B455E4C00719557 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		538911C21B455E4C00719557 /* Build configuration list for PBXNativeTarget "FantasyWeiboTests" */ = {
 			isa = XCConfigurationList;
@@ -416,6 +441,7 @@
 				538911C41B455E4C00719557 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
