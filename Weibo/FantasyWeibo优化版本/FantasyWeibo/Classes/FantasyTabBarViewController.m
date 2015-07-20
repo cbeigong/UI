@@ -11,6 +11,7 @@
 #import "FantasyDiscoverViewController.h"
 #import "FantasyProfileViewController.h"
 #import "FantasyMessageCenterViewController.h"
+#import "FantasyNavigationController.h"
 
 
 
@@ -71,7 +72,7 @@
     [childVc.tabBarItem setTitleTextAttributes:selectedTextAttrs forState:UIControlStateSelected];
     
     // 先把传进来的UItabbleViewController包装进导航栏控制器。
-    UINavigationController  *nav = [[UINavigationController alloc] initWithRootViewController:childVc];
+    FantasyNavigationController  *nav = [[FantasyNavigationController alloc] initWithRootViewController:childVc];
     
     // 添加为UItabBarController的子控制器
     [self addChildViewController:nav];

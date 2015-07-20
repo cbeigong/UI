@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5384C6A71B4A0FA400FB90EF /* FantasyTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5384C6A51B4A0FA400FB90EF /* FantasyTestViewController.m */; };
+		5384C6A81B4A0FA400FB90EF /* FantasyTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5384C6A61B4A0FA400FB90EF /* FantasyTestViewController.xib */; };
+		5384C6AC1B4A226200FB90EF /* FantasyTest1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5384C6AA1B4A226200FB90EF /* FantasyTest1ViewController.m */; };
+		5384C6AD1B4A226200FB90EF /* FantasyTest1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5384C6AB1B4A226200FB90EF /* FantasyTest1ViewController.xib */; };
 		53863F741B49117200116EF0 /* FantasyHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53863F731B49117200116EF0 /* FantasyHomeViewController.m */; };
 		53863F791B4912BF00116EF0 /* FantasyMessageCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53863F781B4912BF00116EF0 /* FantasyMessageCenterViewController.m */; };
 		53863F7C1B4912F100116EF0 /* FantasyDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53863F7B1B4912F100116EF0 /* FantasyDiscoverViewController.m */; };
@@ -17,6 +21,8 @@
 		538911BC1B455E4C00719557 /* FantasyWeiboTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 538911BB1B455E4C00719557 /* FantasyWeiboTests.m */; };
 		538911C91B455F1A00719557 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 538911C71B455F1A00719557 /* AppDelegate.m */; };
 		538911CA1B455F1A00719557 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 538911C81B455F1A00719557 /* main.m */; };
+		53F7301D1B4A5A5E008806C5 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F7301C1B4A5A5E008806C5 /* UIView+Extension.m */; };
+		53F730201B4A73E8008806C5 /* FantasyNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F7301F1B4A73E8008806C5 /* FantasyNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +36,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5384C6A41B4A0FA400FB90EF /* FantasyTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FantasyTestViewController.h; sourceTree = "<group>"; };
+		5384C6A51B4A0FA400FB90EF /* FantasyTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FantasyTestViewController.m; sourceTree = "<group>"; };
+		5384C6A61B4A0FA400FB90EF /* FantasyTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FantasyTestViewController.xib; sourceTree = "<group>"; };
+		5384C6A91B4A226200FB90EF /* FantasyTest1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FantasyTest1ViewController.h; sourceTree = "<group>"; };
+		5384C6AA1B4A226200FB90EF /* FantasyTest1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FantasyTest1ViewController.m; sourceTree = "<group>"; };
+		5384C6AB1B4A226200FB90EF /* FantasyTest1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FantasyTest1ViewController.xib; sourceTree = "<group>"; };
 		53863F721B49117200116EF0 /* FantasyHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FantasyHomeViewController.h; sourceTree = "<group>"; };
 		53863F731B49117200116EF0 /* FantasyHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FantasyHomeViewController.m; sourceTree = "<group>"; };
 		53863F771B4912BF00116EF0 /* FantasyMessageCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FantasyMessageCenterViewController.h; sourceTree = "<group>"; };
@@ -50,6 +62,10 @@
 		538911C61B455F1A00719557 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		538911C71B455F1A00719557 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		538911C81B455F1A00719557 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		53F7301B1B4A5A5E008806C5 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		53F7301C1B4A5A5E008806C5 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		53F7301E1B4A73E8008806C5 /* FantasyNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FantasyNavigationController.h; sourceTree = "<group>"; };
+		53F7301F1B4A73E8008806C5 /* FantasyNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FantasyNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +156,16 @@
 				53863F7E1B49131400116EF0 /* FantasyProfileViewController.m */,
 				53863F801B497C4300116EF0 /* FantasyTabBarViewController.h */,
 				53863F811B497C4300116EF0 /* FantasyTabBarViewController.m */,
+				5384C6A41B4A0FA400FB90EF /* FantasyTestViewController.h */,
+				5384C6A51B4A0FA400FB90EF /* FantasyTestViewController.m */,
+				5384C6A61B4A0FA400FB90EF /* FantasyTestViewController.xib */,
+				5384C6A91B4A226200FB90EF /* FantasyTest1ViewController.h */,
+				5384C6AA1B4A226200FB90EF /* FantasyTest1ViewController.m */,
+				5384C6AB1B4A226200FB90EF /* FantasyTest1ViewController.xib */,
+				53F7301B1B4A5A5E008806C5 /* UIView+Extension.h */,
+				53F7301C1B4A5A5E008806C5 /* UIView+Extension.m */,
+				53F7301E1B4A73E8008806C5 /* FantasyNavigationController.h */,
+				53F7301F1B4A73E8008806C5 /* FantasyNavigationController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -224,6 +250,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5384C6A81B4A0FA400FB90EF /* FantasyTestViewController.xib in Resources */,
+				5384C6AD1B4A226200FB90EF /* FantasyTest1ViewController.xib in Resources */,
 				538911B01B455E4C00719557 /* LaunchScreen.xib in Resources */,
 				538911AD1B455E4C00719557 /* Images.xcassets in Resources */,
 			);
@@ -243,13 +271,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53F7301D1B4A5A5E008806C5 /* UIView+Extension.m in Sources */,
 				53863F741B49117200116EF0 /* FantasyHomeViewController.m in Sources */,
+				53F730201B4A73E8008806C5 /* FantasyNavigationController.m in Sources */,
 				538911CA1B455F1A00719557 /* main.m in Sources */,
 				53863F791B4912BF00116EF0 /* FantasyMessageCenterViewController.m in Sources */,
+				5384C6A71B4A0FA400FB90EF /* FantasyTestViewController.m in Sources */,
 				538911C91B455F1A00719557 /* AppDelegate.m in Sources */,
 				53863F821B497C4300116EF0 /* FantasyTabBarViewController.m in Sources */,
 				53863F7C1B4912F100116EF0 /* FantasyDiscoverViewController.m in Sources */,
 				53863F7F1B49131400116EF0 /* FantasyProfileViewController.m in Sources */,
+				5384C6AC1B4A226200FB90EF /* FantasyTest1ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

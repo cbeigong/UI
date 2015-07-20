@@ -7,6 +7,8 @@
 //
 
 #import "FantasyMessageCenterViewController.h"
+#import "FantasyTestViewController.h"
+
 
 @interface FantasyMessageCenterViewController ()
 
@@ -30,7 +32,7 @@
 }
 
 #pragma mark - Table view data source
-
+//
 //- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 //#warning Potentially incomplete method implementation.
 //    // Return the number of sections.
@@ -56,6 +58,54 @@
     
     return cell;
 }
+
+#pragma mark -代理方法
+
+- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    FantasyTestViewController *test1 = [[FantasyTestViewController alloc] init];
+    test1.title = @"测试1控制器";
+    // 当test1控制其被push的时候， test1所在的tabbarcontroller的tabbar会自动隐藏
+    // 当test1控制器被pop的时候， test1所在的tabbarcontroller的tabbar会自动显示
+    test1.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:test1 animated:YES];
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
