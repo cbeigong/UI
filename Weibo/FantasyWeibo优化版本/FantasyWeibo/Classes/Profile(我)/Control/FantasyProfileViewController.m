@@ -1,28 +1,44 @@
 //
-//  FantasyDiscoverViewController.m
+//  FantasyProfileViewController.m
 //  FantasyWeibo
 //
 //  Created by clm on 15/7/5.
 //  Copyright (c) 2015年 clm. All rights reserved.
 //
 
-#import "FantasyDiscoverViewController.h"
+#import "FantasyProfileViewController.h"
+#import "FantasyTestViewController.h"
+#import "FTSearchBar.h"
+#import "UIView+Extension.h"
 
-@interface FantasyDiscoverViewController ()
+@interface FantasyProfileViewController ()
 
 @end
 
-@implementation FantasyDiscoverViewController
+@implementation FantasyProfileViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"设置" style:0 target:self action:@selector(setting)];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    FTSearchBar *searchBar = [FTSearchBar searchBar];
+    // searchBar 继承自UITextField 而UITextField 继承自UIView 而我门时给UIView写分类扩充width和height的get和set方法，所以要import 分类的头文件进来；
+    searchBar.width = 300;
+    searchBar.height = 30;
+    [self.view addSubview:searchBar];
+    
+  
+    
 }
+
+- (void)setting
+{
+    FantasyTestViewController *test1 = [[FantasyTestViewController alloc] init];
+    test1.title = @"test1";
+    [self.navigationController pushViewController:test1 animated:YES];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

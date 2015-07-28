@@ -7,22 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5384C6A71B4A0FA400FB90EF /* FantasyTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5384C6A51B4A0FA400FB90EF /* FantasyTestViewController.m */; };
-		5384C6A81B4A0FA400FB90EF /* FantasyTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5384C6A61B4A0FA400FB90EF /* FantasyTestViewController.xib */; };
-		5384C6AC1B4A226200FB90EF /* FantasyTest1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5384C6AA1B4A226200FB90EF /* FantasyTest1ViewController.m */; };
-		5384C6AD1B4A226200FB90EF /* FantasyTest1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5384C6AB1B4A226200FB90EF /* FantasyTest1ViewController.xib */; };
-		53863F741B49117200116EF0 /* FantasyHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53863F731B49117200116EF0 /* FantasyHomeViewController.m */; };
-		53863F791B4912BF00116EF0 /* FantasyMessageCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53863F781B4912BF00116EF0 /* FantasyMessageCenterViewController.m */; };
-		53863F7C1B4912F100116EF0 /* FantasyDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53863F7B1B4912F100116EF0 /* FantasyDiscoverViewController.m */; };
-		53863F7F1B49131400116EF0 /* FantasyProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53863F7E1B49131400116EF0 /* FantasyProfileViewController.m */; };
-		53863F821B497C4300116EF0 /* FantasyTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53863F811B497C4300116EF0 /* FantasyTabBarViewController.m */; };
+		53124C3E1B61F50E001357A5 /* FTDropdownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 53124C3D1B61F50E001357A5 /* FTDropdownMenu.m */; };
+		53124C411B61F696001357A5 /* FTTitleMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53124C401B61F696001357A5 /* FTTitleMenuViewController.m */; };
+		537CD8D41B662C9D0022BBF5 /* FTNewFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 537CD8D31B662C9D0022BBF5 /* FTNewFeatureViewController.m */; };
+		537CD8E91B66746B0022BBF5 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 537CD8D71B66746B0022BBF5 /* AFHTTPRequestOperation.m */; };
+		537CD8EA1B66746B0022BBF5 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 537CD8D91B66746B0022BBF5 /* AFHTTPRequestOperationManager.m */; };
+		537CD8EB1B66746B0022BBF5 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 537CD8DB1B66746B0022BBF5 /* AFHTTPSessionManager.m */; };
+		537CD8EC1B66746B0022BBF5 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 537CD8DE1B66746B0022BBF5 /* AFNetworkReachabilityManager.m */; };
+		537CD8ED1B66746B0022BBF5 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 537CD8E01B66746B0022BBF5 /* AFSecurityPolicy.m */; };
+		537CD8EE1B66746B0022BBF5 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 537CD8E21B66746B0022BBF5 /* AFURLConnectionOperation.m */; };
+		537CD8EF1B66746B0022BBF5 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 537CD8E41B66746B0022BBF5 /* AFURLRequestSerialization.m */; };
+		537CD8F01B66746B0022BBF5 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 537CD8E61B66746B0022BBF5 /* AFURLResponseSerialization.m */; };
+		537CD8F11B66746B0022BBF5 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 537CD8E81B66746B0022BBF5 /* AFURLSessionManager.m */; };
+		537CD8F51B6675000022BBF5 /* FTOAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 537CD8F41B6675000022BBF5 /* FTOAuthViewController.m */; };
 		538911AD1B455E4C00719557 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 538911AC1B455E4C00719557 /* Images.xcassets */; };
 		538911B01B455E4C00719557 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 538911AE1B455E4C00719557 /* LaunchScreen.xib */; };
 		538911BC1B455E4C00719557 /* FantasyWeiboTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 538911BB1B455E4C00719557 /* FantasyWeiboTests.m */; };
-		538911C91B455F1A00719557 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 538911C71B455F1A00719557 /* AppDelegate.m */; };
-		538911CA1B455F1A00719557 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 538911C81B455F1A00719557 /* main.m */; };
-		53F7301D1B4A5A5E008806C5 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F7301C1B4A5A5E008806C5 /* UIView+Extension.m */; };
-		53F730201B4A73E8008806C5 /* FantasyNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F7301F1B4A73E8008806C5 /* FantasyNavigationController.m */; };
+		53D7C7AC1B5DDFC900EF0F44 /* FantasyDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D7C7801B5DDFC900EF0F44 /* FantasyDiscoverViewController.m */; };
+		53D7C7AD1B5DDFC900EF0F44 /* FantasyHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D7C7861B5DDFC900EF0F44 /* FantasyHomeViewController.m */; };
+		53D7C7AE1B5DDFC900EF0F44 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D7C78C1B5DDFC900EF0F44 /* UIView+Extension.m */; };
+		53D7C7AF1B5DDFC900EF0F44 /* FantasyNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D7C78F1B5DDFC900EF0F44 /* FantasyNavigationController.m */; };
+		53D7C7B01B5DDFC900EF0F44 /* FantasyTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D7C7911B5DDFC900EF0F44 /* FantasyTabBarViewController.m */; };
+		53D7C7B11B5DDFC900EF0F44 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D7C7961B5DDFC900EF0F44 /* AppDelegate.m */; };
+		53D7C7B21B5DDFC900EF0F44 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D7C7971B5DDFC900EF0F44 /* main.m */; };
+		53D7C7B31B5DDFC900EF0F44 /* FantasyMessageCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D7C79C1B5DDFC900EF0F44 /* FantasyMessageCenterViewController.m */; };
+		53D7C7B41B5DDFC900EF0F44 /* FantasyProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D7C7A21B5DDFC900EF0F44 /* FantasyProfileViewController.m */; };
+		53D7C7B51B5DDFC900EF0F44 /* FantasyTest1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D7C7A71B5DDFC900EF0F44 /* FantasyTest1ViewController.m */; };
+		53D7C7B61B5DDFC900EF0F44 /* FantasyTest1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53D7C7A81B5DDFC900EF0F44 /* FantasyTest1ViewController.xib */; };
+		53D7C7B71B5DDFC900EF0F44 /* FantasyTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D7C7AA1B5DDFC900EF0F44 /* FantasyTestViewController.m */; };
+		53D7C7B81B5DDFC900EF0F44 /* FantasyTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53D7C7AB1B5DDFC900EF0F44 /* FantasyTestViewController.xib */; };
+		53D7C7BB1B5DE5A600EF0F44 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D7C7BA1B5DE5A600EF0F44 /* UIBarButtonItem+Extension.m */; };
+		53D7C7BE1B5E469C00EF0F44 /* FTSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D7C7BD1B5E469C00EF0F44 /* FTSearchBar.m */; };
+		53ED52A81B653ABD008D908C /* FTTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 53ED52A71B653ABD008D908C /* FTTabBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,22 +52,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5384C6A41B4A0FA400FB90EF /* FantasyTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FantasyTestViewController.h; sourceTree = "<group>"; };
-		5384C6A51B4A0FA400FB90EF /* FantasyTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FantasyTestViewController.m; sourceTree = "<group>"; };
-		5384C6A61B4A0FA400FB90EF /* FantasyTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FantasyTestViewController.xib; sourceTree = "<group>"; };
-		5384C6A91B4A226200FB90EF /* FantasyTest1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FantasyTest1ViewController.h; sourceTree = "<group>"; };
-		5384C6AA1B4A226200FB90EF /* FantasyTest1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FantasyTest1ViewController.m; sourceTree = "<group>"; };
-		5384C6AB1B4A226200FB90EF /* FantasyTest1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FantasyTest1ViewController.xib; sourceTree = "<group>"; };
-		53863F721B49117200116EF0 /* FantasyHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FantasyHomeViewController.h; sourceTree = "<group>"; };
-		53863F731B49117200116EF0 /* FantasyHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FantasyHomeViewController.m; sourceTree = "<group>"; };
-		53863F771B4912BF00116EF0 /* FantasyMessageCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FantasyMessageCenterViewController.h; sourceTree = "<group>"; };
-		53863F781B4912BF00116EF0 /* FantasyMessageCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FantasyMessageCenterViewController.m; sourceTree = "<group>"; };
-		53863F7A1B4912F100116EF0 /* FantasyDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FantasyDiscoverViewController.h; sourceTree = "<group>"; };
-		53863F7B1B4912F100116EF0 /* FantasyDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FantasyDiscoverViewController.m; sourceTree = "<group>"; };
-		53863F7D1B49131400116EF0 /* FantasyProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FantasyProfileViewController.h; sourceTree = "<group>"; };
-		53863F7E1B49131400116EF0 /* FantasyProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FantasyProfileViewController.m; sourceTree = "<group>"; };
-		53863F801B497C4300116EF0 /* FantasyTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FantasyTabBarViewController.h; sourceTree = "<group>"; };
-		53863F811B497C4300116EF0 /* FantasyTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FantasyTabBarViewController.m; sourceTree = "<group>"; };
+		53124C3C1B61F50E001357A5 /* FTDropdownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTDropdownMenu.h; sourceTree = "<group>"; };
+		53124C3D1B61F50E001357A5 /* FTDropdownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTDropdownMenu.m; sourceTree = "<group>"; };
+		53124C3F1B61F696001357A5 /* FTTitleMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTTitleMenuViewController.h; sourceTree = "<group>"; };
+		53124C401B61F696001357A5 /* FTTitleMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTTitleMenuViewController.m; sourceTree = "<group>"; };
+		537CD8D21B662C9D0022BBF5 /* FTNewFeatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTNewFeatureViewController.h; sourceTree = "<group>"; };
+		537CD8D31B662C9D0022BBF5 /* FTNewFeatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTNewFeatureViewController.m; sourceTree = "<group>"; };
+		537CD8D61B66746B0022BBF5 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		537CD8D71B66746B0022BBF5 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		537CD8D81B66746B0022BBF5 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		537CD8D91B66746B0022BBF5 /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		537CD8DA1B66746B0022BBF5 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		537CD8DB1B66746B0022BBF5 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		537CD8DC1B66746B0022BBF5 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		537CD8DD1B66746B0022BBF5 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		537CD8DE1B66746B0022BBF5 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		537CD8DF1B66746B0022BBF5 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		537CD8E01B66746B0022BBF5 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		537CD8E11B66746B0022BBF5 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		537CD8E21B66746B0022BBF5 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		537CD8E31B66746B0022BBF5 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		537CD8E41B66746B0022BBF5 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		537CD8E51B66746B0022BBF5 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		537CD8E61B66746B0022BBF5 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		537CD8E71B66746B0022BBF5 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		537CD8E81B66746B0022BBF5 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		537CD8F31B6675000022BBF5 /* FTOAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTOAuthViewController.h; sourceTree = "<group>"; };
+		537CD8F41B6675000022BBF5 /* FTOAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTOAuthViewController.m; sourceTree = "<group>"; };
 		5389119C1B455E4C00719557 /* FantasyWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FantasyWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		538911A01B455E4C00719557 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		538911AC1B455E4C00719557 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -59,13 +86,35 @@
 		538911B51B455E4C00719557 /* FantasyWeiboTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FantasyWeiboTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		538911BA1B455E4C00719557 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		538911BB1B455E4C00719557 /* FantasyWeiboTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FantasyWeiboTests.m; sourceTree = "<group>"; };
-		538911C61B455F1A00719557 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		538911C71B455F1A00719557 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		538911C81B455F1A00719557 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		53F7301B1B4A5A5E008806C5 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
-		53F7301C1B4A5A5E008806C5 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
-		53F7301E1B4A73E8008806C5 /* FantasyNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FantasyNavigationController.h; sourceTree = "<group>"; };
-		53F7301F1B4A73E8008806C5 /* FantasyNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FantasyNavigationController.m; sourceTree = "<group>"; };
+		53D7C77F1B5DDFC900EF0F44 /* FantasyDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FantasyDiscoverViewController.h; sourceTree = "<group>"; };
+		53D7C7801B5DDFC900EF0F44 /* FantasyDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FantasyDiscoverViewController.m; sourceTree = "<group>"; };
+		53D7C7851B5DDFC900EF0F44 /* FantasyHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FantasyHomeViewController.h; sourceTree = "<group>"; };
+		53D7C7861B5DDFC900EF0F44 /* FantasyHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FantasyHomeViewController.m; sourceTree = "<group>"; };
+		53D7C78B1B5DDFC900EF0F44 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		53D7C78C1B5DDFC900EF0F44 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		53D7C78E1B5DDFC900EF0F44 /* FantasyNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FantasyNavigationController.h; sourceTree = "<group>"; };
+		53D7C78F1B5DDFC900EF0F44 /* FantasyNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FantasyNavigationController.m; sourceTree = "<group>"; };
+		53D7C7901B5DDFC900EF0F44 /* FantasyTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FantasyTabBarViewController.h; sourceTree = "<group>"; };
+		53D7C7911B5DDFC900EF0F44 /* FantasyTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FantasyTabBarViewController.m; sourceTree = "<group>"; };
+		53D7C7951B5DDFC900EF0F44 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		53D7C7961B5DDFC900EF0F44 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		53D7C7971B5DDFC900EF0F44 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		53D7C79B1B5DDFC900EF0F44 /* FantasyMessageCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FantasyMessageCenterViewController.h; sourceTree = "<group>"; };
+		53D7C79C1B5DDFC900EF0F44 /* FantasyMessageCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FantasyMessageCenterViewController.m; sourceTree = "<group>"; };
+		53D7C7A11B5DDFC900EF0F44 /* FantasyProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FantasyProfileViewController.h; sourceTree = "<group>"; };
+		53D7C7A21B5DDFC900EF0F44 /* FantasyProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FantasyProfileViewController.m; sourceTree = "<group>"; };
+		53D7C7A61B5DDFC900EF0F44 /* FantasyTest1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FantasyTest1ViewController.h; sourceTree = "<group>"; };
+		53D7C7A71B5DDFC900EF0F44 /* FantasyTest1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FantasyTest1ViewController.m; sourceTree = "<group>"; };
+		53D7C7A81B5DDFC900EF0F44 /* FantasyTest1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FantasyTest1ViewController.xib; sourceTree = "<group>"; };
+		53D7C7A91B5DDFC900EF0F44 /* FantasyTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FantasyTestViewController.h; sourceTree = "<group>"; };
+		53D7C7AA1B5DDFC900EF0F44 /* FantasyTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FantasyTestViewController.m; sourceTree = "<group>"; };
+		53D7C7AB1B5DDFC900EF0F44 /* FantasyTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FantasyTestViewController.xib; sourceTree = "<group>"; };
+		53D7C7B91B5DE5A600EF0F44 /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
+		53D7C7BA1B5DE5A600EF0F44 /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
+		53D7C7BC1B5E469C00EF0F44 /* FTSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTSearchBar.h; sourceTree = "<group>"; };
+		53D7C7BD1B5E469C00EF0F44 /* FTSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTSearchBar.m; sourceTree = "<group>"; };
+		53ED52A61B653ABD008D908C /* FTTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTTabBar.h; sourceTree = "<group>"; };
+		53ED52A71B653ABD008D908C /* FTTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTTabBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +135,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		537CD8D01B65C7380022BBF5 /* Newfeature(新特性) */ = {
+			isa = PBXGroup;
+			children = (
+				537CD8D11B65C7380022BBF5 /* Controller */,
+			);
+			path = "Newfeature(新特性)";
+			sourceTree = "<group>";
+		};
+		537CD8D11B65C7380022BBF5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				537CD8D21B662C9D0022BBF5 /* FTNewFeatureViewController.h */,
+				537CD8D31B662C9D0022BBF5 /* FTNewFeatureViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		537CD8D51B66746B0022BBF5 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				537CD8D61B66746B0022BBF5 /* AFHTTPRequestOperation.h */,
+				537CD8D71B66746B0022BBF5 /* AFHTTPRequestOperation.m */,
+				537CD8D81B66746B0022BBF5 /* AFHTTPRequestOperationManager.h */,
+				537CD8D91B66746B0022BBF5 /* AFHTTPRequestOperationManager.m */,
+				537CD8DA1B66746B0022BBF5 /* AFHTTPSessionManager.h */,
+				537CD8DB1B66746B0022BBF5 /* AFHTTPSessionManager.m */,
+				537CD8DC1B66746B0022BBF5 /* AFNetworking.h */,
+				537CD8DD1B66746B0022BBF5 /* AFNetworkReachabilityManager.h */,
+				537CD8DE1B66746B0022BBF5 /* AFNetworkReachabilityManager.m */,
+				537CD8DF1B66746B0022BBF5 /* AFSecurityPolicy.h */,
+				537CD8E01B66746B0022BBF5 /* AFSecurityPolicy.m */,
+				537CD8E11B66746B0022BBF5 /* AFURLConnectionOperation.h */,
+				537CD8E21B66746B0022BBF5 /* AFURLConnectionOperation.m */,
+				537CD8E31B66746B0022BBF5 /* AFURLRequestSerialization.h */,
+				537CD8E41B66746B0022BBF5 /* AFURLRequestSerialization.m */,
+				537CD8E51B66746B0022BBF5 /* AFURLResponseSerialization.h */,
+				537CD8E61B66746B0022BBF5 /* AFURLResponseSerialization.m */,
+				537CD8E71B66746B0022BBF5 /* AFURLSessionManager.h */,
+				537CD8E81B66746B0022BBF5 /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		537CD8F21B6674D10022BBF5 /* OAuth(授权) */ = {
+			isa = PBXGroup;
+			children = (
+				537CD8F31B6675000022BBF5 /* FTOAuthViewController.h */,
+				537CD8F41B6675000022BBF5 /* FTOAuthViewController.m */,
+			);
+			path = "OAuth(授权)";
+			sourceTree = "<group>";
+		};
 		538911931B455E4C00719557 = {
 			isa = PBXGroup;
 			children = (
@@ -143,31 +244,236 @@
 		538911C51B455F1A00719557 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				538911C61B455F1A00719557 /* AppDelegate.h */,
-				538911C71B455F1A00719557 /* AppDelegate.m */,
-				538911C81B455F1A00719557 /* main.m */,
-				53863F721B49117200116EF0 /* FantasyHomeViewController.h */,
-				53863F731B49117200116EF0 /* FantasyHomeViewController.m */,
-				53863F771B4912BF00116EF0 /* FantasyMessageCenterViewController.h */,
-				53863F781B4912BF00116EF0 /* FantasyMessageCenterViewController.m */,
-				53863F7A1B4912F100116EF0 /* FantasyDiscoverViewController.h */,
-				53863F7B1B4912F100116EF0 /* FantasyDiscoverViewController.m */,
-				53863F7D1B49131400116EF0 /* FantasyProfileViewController.h */,
-				53863F7E1B49131400116EF0 /* FantasyProfileViewController.m */,
-				53863F801B497C4300116EF0 /* FantasyTabBarViewController.h */,
-				53863F811B497C4300116EF0 /* FantasyTabBarViewController.m */,
-				5384C6A41B4A0FA400FB90EF /* FantasyTestViewController.h */,
-				5384C6A51B4A0FA400FB90EF /* FantasyTestViewController.m */,
-				5384C6A61B4A0FA400FB90EF /* FantasyTestViewController.xib */,
-				5384C6A91B4A226200FB90EF /* FantasyTest1ViewController.h */,
-				5384C6AA1B4A226200FB90EF /* FantasyTest1ViewController.m */,
-				5384C6AB1B4A226200FB90EF /* FantasyTest1ViewController.xib */,
-				53F7301B1B4A5A5E008806C5 /* UIView+Extension.h */,
-				53F7301C1B4A5A5E008806C5 /* UIView+Extension.m */,
-				53F7301E1B4A73E8008806C5 /* FantasyNavigationController.h */,
-				53F7301F1B4A73E8008806C5 /* FantasyNavigationController.m */,
+				537CD8F21B6674D10022BBF5 /* OAuth(授权) */,
+				537CD8D01B65C7380022BBF5 /* Newfeature(新特性) */,
+				53D7C77D1B5DDFC900EF0F44 /* Discover(发现） */,
+				53D7C7831B5DDFC900EF0F44 /* Home(首页) */,
+				53D7C7891B5DDFC900EF0F44 /* Main */,
+				53D7C7991B5DDFC900EF0F44 /* MessegeCenter(消息) */,
+				53D7C79F1B5DDFC900EF0F44 /* Profile(我) */,
+				53D7C7A51B5DDFC900EF0F44 /* Temp(临时) */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		53D7C77D1B5DDFC900EF0F44 /* Discover(发现） */ = {
+			isa = PBXGroup;
+			children = (
+				53D7C77E1B5DDFC900EF0F44 /* Control */,
+				53D7C7811B5DDFC900EF0F44 /* Model */,
+				53D7C7821B5DDFC900EF0F44 /* View */,
+			);
+			path = "Discover(发现）";
+			sourceTree = "<group>";
+		};
+		53D7C77E1B5DDFC900EF0F44 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				53D7C77F1B5DDFC900EF0F44 /* FantasyDiscoverViewController.h */,
+				53D7C7801B5DDFC900EF0F44 /* FantasyDiscoverViewController.m */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		53D7C7811B5DDFC900EF0F44 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		53D7C7821B5DDFC900EF0F44 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		53D7C7831B5DDFC900EF0F44 /* Home(首页) */ = {
+			isa = PBXGroup;
+			children = (
+				53D7C7841B5DDFC900EF0F44 /* Control */,
+				53D7C7871B5DDFC900EF0F44 /* Model */,
+				53D7C7881B5DDFC900EF0F44 /* View */,
+			);
+			path = "Home(首页)";
+			sourceTree = "<group>";
+		};
+		53D7C7841B5DDFC900EF0F44 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				53D7C7851B5DDFC900EF0F44 /* FantasyHomeViewController.h */,
+				53D7C7861B5DDFC900EF0F44 /* FantasyHomeViewController.m */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		53D7C7871B5DDFC900EF0F44 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		53D7C7881B5DDFC900EF0F44 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				53124C3F1B61F696001357A5 /* FTTitleMenuViewController.h */,
+				53124C401B61F696001357A5 /* FTTitleMenuViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		53D7C7891B5DDFC900EF0F44 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				53D7C78A1B5DDFC900EF0F44 /* Category */,
+				53D7C78D1B5DDFC900EF0F44 /* Control */,
+				53D7C7921B5DDFC900EF0F44 /* Lib */,
+				53D7C7931B5DDFC900EF0F44 /* Model */,
+				53D7C7941B5DDFC900EF0F44 /* Other */,
+				53D7C7981B5DDFC900EF0F44 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		53D7C78A1B5DDFC900EF0F44 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				53D7C78B1B5DDFC900EF0F44 /* UIView+Extension.h */,
+				53D7C78C1B5DDFC900EF0F44 /* UIView+Extension.m */,
+				53D7C7B91B5DE5A600EF0F44 /* UIBarButtonItem+Extension.h */,
+				53D7C7BA1B5DE5A600EF0F44 /* UIBarButtonItem+Extension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		53D7C78D1B5DDFC900EF0F44 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				53D7C78E1B5DDFC900EF0F44 /* FantasyNavigationController.h */,
+				53D7C78F1B5DDFC900EF0F44 /* FantasyNavigationController.m */,
+				53D7C7901B5DDFC900EF0F44 /* FantasyTabBarViewController.h */,
+				53D7C7911B5DDFC900EF0F44 /* FantasyTabBarViewController.m */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		53D7C7921B5DDFC900EF0F44 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				537CD8D51B66746B0022BBF5 /* AFNetworking */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		53D7C7931B5DDFC900EF0F44 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		53D7C7941B5DDFC900EF0F44 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				53D7C7951B5DDFC900EF0F44 /* AppDelegate.h */,
+				53D7C7961B5DDFC900EF0F44 /* AppDelegate.m */,
+				53D7C7971B5DDFC900EF0F44 /* main.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		53D7C7981B5DDFC900EF0F44 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				53124C3C1B61F50E001357A5 /* FTDropdownMenu.h */,
+				53124C3D1B61F50E001357A5 /* FTDropdownMenu.m */,
+				53D7C7BC1B5E469C00EF0F44 /* FTSearchBar.h */,
+				53D7C7BD1B5E469C00EF0F44 /* FTSearchBar.m */,
+				53ED52A61B653ABD008D908C /* FTTabBar.h */,
+				53ED52A71B653ABD008D908C /* FTTabBar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		53D7C7991B5DDFC900EF0F44 /* MessegeCenter(消息) */ = {
+			isa = PBXGroup;
+			children = (
+				53D7C79A1B5DDFC900EF0F44 /* Control */,
+				53D7C79D1B5DDFC900EF0F44 /* Model */,
+				53D7C79E1B5DDFC900EF0F44 /* View */,
+			);
+			path = "MessegeCenter(消息)";
+			sourceTree = "<group>";
+		};
+		53D7C79A1B5DDFC900EF0F44 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				53D7C79B1B5DDFC900EF0F44 /* FantasyMessageCenterViewController.h */,
+				53D7C79C1B5DDFC900EF0F44 /* FantasyMessageCenterViewController.m */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		53D7C79D1B5DDFC900EF0F44 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		53D7C79E1B5DDFC900EF0F44 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		53D7C79F1B5DDFC900EF0F44 /* Profile(我) */ = {
+			isa = PBXGroup;
+			children = (
+				53D7C7A01B5DDFC900EF0F44 /* Control */,
+				53D7C7A31B5DDFC900EF0F44 /* Model */,
+				53D7C7A41B5DDFC900EF0F44 /* View */,
+			);
+			path = "Profile(我)";
+			sourceTree = "<group>";
+		};
+		53D7C7A01B5DDFC900EF0F44 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				53D7C7A11B5DDFC900EF0F44 /* FantasyProfileViewController.h */,
+				53D7C7A21B5DDFC900EF0F44 /* FantasyProfileViewController.m */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		53D7C7A31B5DDFC900EF0F44 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		53D7C7A41B5DDFC900EF0F44 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		53D7C7A51B5DDFC900EF0F44 /* Temp(临时) */ = {
+			isa = PBXGroup;
+			children = (
+				53D7C7A61B5DDFC900EF0F44 /* FantasyTest1ViewController.h */,
+				53D7C7A71B5DDFC900EF0F44 /* FantasyTest1ViewController.m */,
+				53D7C7A81B5DDFC900EF0F44 /* FantasyTest1ViewController.xib */,
+				53D7C7A91B5DDFC900EF0F44 /* FantasyTestViewController.h */,
+				53D7C7AA1B5DDFC900EF0F44 /* FantasyTestViewController.m */,
+				53D7C7AB1B5DDFC900EF0F44 /* FantasyTestViewController.xib */,
+			);
+			path = "Temp(临时)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,10 +556,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5384C6A81B4A0FA400FB90EF /* FantasyTestViewController.xib in Resources */,
-				5384C6AD1B4A226200FB90EF /* FantasyTest1ViewController.xib in Resources */,
 				538911B01B455E4C00719557 /* LaunchScreen.xib in Resources */,
 				538911AD1B455E4C00719557 /* Images.xcassets in Resources */,
+				53D7C7B61B5DDFC900EF0F44 /* FantasyTest1ViewController.xib in Resources */,
+				53D7C7B81B5DDFC900EF0F44 /* FantasyTestViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,17 +577,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53F7301D1B4A5A5E008806C5 /* UIView+Extension.m in Sources */,
-				53863F741B49117200116EF0 /* FantasyHomeViewController.m in Sources */,
-				53F730201B4A73E8008806C5 /* FantasyNavigationController.m in Sources */,
-				538911CA1B455F1A00719557 /* main.m in Sources */,
-				53863F791B4912BF00116EF0 /* FantasyMessageCenterViewController.m in Sources */,
-				5384C6A71B4A0FA400FB90EF /* FantasyTestViewController.m in Sources */,
-				538911C91B455F1A00719557 /* AppDelegate.m in Sources */,
-				53863F821B497C4300116EF0 /* FantasyTabBarViewController.m in Sources */,
-				53863F7C1B4912F100116EF0 /* FantasyDiscoverViewController.m in Sources */,
-				53863F7F1B49131400116EF0 /* FantasyProfileViewController.m in Sources */,
-				5384C6AC1B4A226200FB90EF /* FantasyTest1ViewController.m in Sources */,
+				537CD8E91B66746B0022BBF5 /* AFHTTPRequestOperation.m in Sources */,
+				53D7C7BB1B5DE5A600EF0F44 /* UIBarButtonItem+Extension.m in Sources */,
+				537CD8D41B662C9D0022BBF5 /* FTNewFeatureViewController.m in Sources */,
+				53124C411B61F696001357A5 /* FTTitleMenuViewController.m in Sources */,
+				53D7C7AE1B5DDFC900EF0F44 /* UIView+Extension.m in Sources */,
+				53D7C7AD1B5DDFC900EF0F44 /* FantasyHomeViewController.m in Sources */,
+				53D7C7B41B5DDFC900EF0F44 /* FantasyProfileViewController.m in Sources */,
+				537CD8EB1B66746B0022BBF5 /* AFHTTPSessionManager.m in Sources */,
+				53D7C7B31B5DDFC900EF0F44 /* FantasyMessageCenterViewController.m in Sources */,
+				53D7C7B11B5DDFC900EF0F44 /* AppDelegate.m in Sources */,
+				537CD8F51B6675000022BBF5 /* FTOAuthViewController.m in Sources */,
+				537CD8EC1B66746B0022BBF5 /* AFNetworkReachabilityManager.m in Sources */,
+				537CD8F11B66746B0022BBF5 /* AFURLSessionManager.m in Sources */,
+				53D7C7B51B5DDFC900EF0F44 /* FantasyTest1ViewController.m in Sources */,
+				53124C3E1B61F50E001357A5 /* FTDropdownMenu.m in Sources */,
+				537CD8EE1B66746B0022BBF5 /* AFURLConnectionOperation.m in Sources */,
+				537CD8F01B66746B0022BBF5 /* AFURLResponseSerialization.m in Sources */,
+				53D7C7B01B5DDFC900EF0F44 /* FantasyTabBarViewController.m in Sources */,
+				537CD8EF1B66746B0022BBF5 /* AFURLRequestSerialization.m in Sources */,
+				53D7C7AF1B5DDFC900EF0F44 /* FantasyNavigationController.m in Sources */,
+				53ED52A81B653ABD008D908C /* FTTabBar.m in Sources */,
+				53D7C7BE1B5E469C00EF0F44 /* FTSearchBar.m in Sources */,
+				53D7C7B71B5DDFC900EF0F44 /* FantasyTestViewController.m in Sources */,
+				53D7C7B21B5DDFC900EF0F44 /* main.m in Sources */,
+				537CD8EA1B66746B0022BBF5 /* AFHTTPRequestOperationManager.m in Sources */,
+				537CD8ED1B66746B0022BBF5 /* AFSecurityPolicy.m in Sources */,
+				53D7C7AC1B5DDFC900EF0F44 /* FantasyDiscoverViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,28 +1,44 @@
 //
-//  FantasyHomeViewController.m
+//  FantasyMessageCenterViewController.m
 //  FantasyWeibo
 //
 //  Created by clm on 15/7/5.
 //  Copyright (c) 2015年 clm. All rights reserved.
 //
 
-#import "FantasyHomeViewController.h"
+#import "FantasyMessageCenterViewController.h"
+#import "FantasyTestViewController.h"
 
-@interface FantasyHomeViewController ()
+
+@interface FantasyMessageCenterViewController ()
 
 @end
 
-@implementation FantasyHomeViewController
+@implementation FantasyMessageCenterViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    // style : 这个参数是用来设置背景的，在iOS7之前效果比较明显, iOS7中没有任何效果
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"写私信" style:UIBarButtonItemStylePlain target:self action:@selector(composeMsg)];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.navigationItem.rightBarButtonItem.enabled = NO;
+
 }
+
+- (void)composeMsg
+{
+    NSLog(@"composeMsg");
+}
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    // 这个item不能点击(目前放在viewWillAppear就能显示disable下的主题)
+    self.navigationItem.rightBarButtonItem.enabled = NO;
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -30,22 +46,83 @@
 }
 
 #pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
-}
+//
+//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+//#warning Potentially incomplete method implementation.
+//    // Return the number of sections.
+//    return 0;
+//}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return 20;
 }
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *ID = @"cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    if(!cell)
+    {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
+    }
+    
+    cell.textLabel.text = [NSString stringWithFormat:@"test-message-%ld " , indexPath.row];
+    
+    return cell;
+}
+
+#pragma mark -代理方法
+
+- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    FantasyTestViewController *test1 = [[FantasyTestViewController alloc] init];
+    test1.title = @"测试1控制器";
+    // 当test1控制其被push的时候， test1所在的tabbarcontroller的tabbar会自动隐藏
+    // 当test1控制器被pop的时候， test1所在的tabbarcontroller的tabbar会自动显示
+    test1.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:test1 animated:YES];
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"reuseIdentifier" forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
     // Configure the cell...
     

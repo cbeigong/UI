@@ -12,6 +12,7 @@
 #import "FantasyProfileViewController.h"
 #import "FantasyMessageCenterViewController.h"
 #import "FantasyNavigationController.h"
+#import "FTTabBar.h"
 
 
 
@@ -42,7 +43,14 @@
     FantasyProfileViewController *profile = [[FantasyProfileViewController alloc] init];
     [self addChildVc:profile title:@"我" image:@"tabbar_profile" selectedImage:@"tababr_profile_selected"];
     
-
+    FTTabBar *tabBar = [[FTTabBar alloc] init];
+    tabBar.delegate = self;
+    [self setValue:tabBar forKeyPath:@"tabBar"];
+    //    self.tabBar = tabBar;
+    
+    //    Person *p = [[Person allooc] init];
+    //    p.name = @"jack";
+    //    [p setValue:@"jack" forKeyPath:@"name"];
     
 }
 
@@ -52,7 +60,7 @@
     
     //    UIViewController *childVc = [[UIViewController alloc] init];
   
-    childVc.view.backgroundColor = FantasyRandomColor;
+//    childVc.view.backgroundColor = FantasyRandomColor;
 //    childVc.tabBarItem.title = title; //设置tabbar的文字
 //    childVc.navigationItem.title = title; //设置navigationBar的文字
       //  设置控制器的文字
@@ -97,5 +105,13 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+#pragma mark - HWTabBarDelegate代理方法
+- (void)tabBarDidClickPlusButton:(FTTabBar *)tabBar
+{
+    UIViewController *vc = [[UIViewController alloc] init];
+    vc.view.backgroundColor = [UIColor redColor];
+    [self presentViewController:vc animated:YES completion:nil];
+}
 
 @end

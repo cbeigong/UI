@@ -1,29 +1,63 @@
 //
-//  FantasyMessageCenterViewController.m
+//  FantasyDiscoverViewController.m
 //  FantasyWeibo
 //
 //  Created by clm on 15/7/5.
 //  Copyright (c) 2015年 clm. All rights reserved.
 //
 
-#import "FantasyMessageCenterViewController.h"
-#import "FantasyTestViewController.h"
+#import "FantasyDiscoverViewController.h"
+#import "UIView+Extension.h"
+#import "FTSearchBar.h"
 
+// RGB颜色
+#define FantasyColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
 
-@interface FantasyMessageCenterViewController ()
+// 随机色
+#define FantasyRandomColor FantasyColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256));
+
+@interface FantasyDiscoverViewController ()
 
 @end
 
-@implementation FantasyMessageCenterViewController
+@implementation FantasyDiscoverViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+//        UISearchBar *searchBar = [[UISearchBar alloc] init];
+//        searchBar.height = 30;
+//        searchBar.scopeBarBackgroundImage = [UIImage imageNamed:@"searchbar_textfield_background"];
+//        self.navigationItem.titleView = searchBar;
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+//    // 创建搜索框对象
+//    UITextField *searchBar = [[UITextField alloc] init];
+//    searchBar.width = 300;
+//    searchBar.height = 30;
+//    searchBar.font = [UIFont systemFontOfSize:15];
+//    searchBar.placeholder = @"请输入搜索条件";
+//    searchBar.background = [UIImage imageNamed:@"searchbar_textfield_background"];
+//    
+//    // 设置左边的放大镜图标
+//    //    UIImage *image = [UIImage imageNamed:@"searchbar_textfield_search_icon"];
+//    // 通过initWithImage来创建初始化UIImageView，UIImageView的尺寸默认就等于image的尺寸
+//    //    UIImageView *searchIcon = [[UIImageView alloc] initWithImage:image];
+//    
+//    // 通过init来创建初始化绝大部分控件，控件都是没有尺寸
+//    UIImageView *searchIcon = [[UIImageView alloc] init];
+//    searchIcon.image = [UIImage imageNamed:@"searchbar_textfield_search_icon"];
+//    searchIcon.width = 30;
+//    searchIcon.height = 30;
+//    searchIcon.contentMode = UIViewContentModeCenter;
+//    searchBar.leftView = searchIcon;
+//    searchBar.leftViewMode = UITextFieldViewModeAlways;
+    FTSearchBar *searchBar = [FTSearchBar searchBar];
+    
+    // 因为searchBar的大小是在外面设置的，所以封装在里面的话，就不用设置宽度和高度
+    searchBar.width = 300;
+    searchBar.height = 30;
+    self.navigationItem.titleView = searchBar;
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,79 +66,18 @@
 }
 
 #pragma mark - Table view data source
-//
-//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-//#warning Potentially incomplete method implementation.
-//    // Return the number of sections.
-//    return 0;
-//}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+#warning Potentially incomplete method implementation.
+    // Return the number of sections.
+    return 0;
+}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 20;
+    return 0;
 }
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString *ID = @"cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
-    if(!cell)
-    {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
-    }
-    
-    cell.textLabel.text = [NSString stringWithFormat:@"test-message-%ld " , indexPath.row];
-    
-    return cell;
-}
-
-#pragma mark -代理方法
-
-- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    FantasyTestViewController *test1 = [[FantasyTestViewController alloc] init];
-    test1.title = @"测试1控制器";
-    // 当test1控制其被push的时候， test1所在的tabbarcontroller的tabbar会自动隐藏
-    // 当test1控制器被pop的时候， test1所在的tabbarcontroller的tabbar会自动显示
-    test1.hidesBottomBarWhenPushed = YES;
-    [self.navigationController pushViewController:test1 animated:YES];
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
