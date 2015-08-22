@@ -10,8 +10,11 @@
 #import "FantasytabBarViewController.h"
 #import "FTNewFeatureViewController.h"
 #import "FTOAuthViewController.h"
-
-
+#import "FTAccount.h"
+#import "FantasyTabBarViewController.h"
+#import "FTAccountTool.h"
+#import "UIWindow+Extension.h"
+#import "SDWebImageManager.h"
 
 // RGB颜色
 #define FantasyColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
@@ -36,29 +39,19 @@
     // 2.设置控制器 最下面的那一条tabbar
 //    UITabBarController *tabbarVc = [[FantasyTabBarViewController alloc] init];
 //    self.window.rootViewController = tabbarVc;
-    self.window.rootViewController = [[FTOAuthViewController alloc] init];
     
-//    // 2.设置根控制器
-//    NSString *key = @"CFBundleVersion";
-//    // 上一次的使用版本（存储在沙盒中的版本号）
-//    NSString *lastVersion = [[NSUserDefaults standardUserDefaults] objectForKey:key];
-//    // 当前软件的版本号（从Info.plist中获得）
-//    NSString *currentVersion = [NSBundle mainBundle].infoDictionary[key];
-//    
-//    if ([currentVersion isEqualToString:lastVersion]) { // 版本号相同：这次打开和上次打开的是同一个版本
-//        self.window.rootViewController = [[FantasyTabBarViewController alloc] init];
-//    } else { // 这次打开的版本和上一次不一样，显示新特性
-//        self.window.rootViewController = [[FTNewFeatureViewController alloc] init];
-//        
-//        // 将当前的版本号存进沙盒
-//        [[NSUserDefaults standardUserDefaults] setObject:currentVersion forKey:key];
-//        [[NSUserDefaults standardUserDefaults] synchronize];
-//    }
-//
+    // 设置根控制器
+    FTAccount *account = [FTAccountTool account];
+    
+    if (account) { // 之前已经登录成功过
+        [self.window switchRootViewController];
+        
+    } else {
+        self.window.rootViewController = [[FTOAuthViewController alloc] init];
+    }
 
     // 4.显示窗口
     [self.window makeKeyAndVisible];
-    
     
     return YES;
 }
@@ -86,6 +79,16 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+- (void)applicationDidReceiveMemoryWarning:(UIApplication *)application
+{
+    SDWebImageManager *mgr = [SDWebImageManager sharedManager];
+    // 1.取消下载
+    [mgr cancelAll];
+    
+    // 2.清除内存中的所有图片
+    [mgr.imageCache clearMemory];
+}
+
 
 @end
 //    UIViewController *vc1 = [[UIViewController alloc] init];

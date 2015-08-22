@@ -8,6 +8,13 @@
 
 #import "FTOAuthViewController.h"
 #import "AFNetworking.h"
+#import "MBProgressHUD+MJ.h"
+#import "FTAccount.h"
+#import "FantasyTabBarViewController.h"
+#import "FTNewFeatureViewController.h"
+#import "FTAccountTool.h"
+#import "UIWindow+Extension.h"
+
 
 @interface FTOAuthViewController () <UIWebViewDelegate>
 
@@ -38,14 +45,17 @@
 #pragma mark - webView代理方法
 - (void)webViewDidFinishLoad:(UIWebView *)webView
 {
-    //    HWLog(@"----webViewDidFinishLoad");
-}
+    [MBProgressHUD hideHUD];}
 
 - (void)webViewDidStartLoad:(UIWebView *)webView
 {
-    //    HWLog(@"----webViewDidStartLoad");
+    [MBProgressHUD showMessage:@"正在加载..."];
 }
 
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
+{
+    [MBProgressHUD hideHUD];
+}
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 {
@@ -61,6 +71,9 @@
         
         // 利用code换取一个accessToken
         [self accessTokenWithCode:code];
+        
+        //由于不跳转，所以禁止回调
+        return NO;
     }
     
     return YES;
@@ -99,8 +112,24 @@
     
     // 3.发送请求
     [mgr POST:@"https://api.weibo.com/oauth2/access_token" parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        [MBProgressHUD hideHUD];
+        
+        // 将返回的账号字典数据 --> 模型，存进沙盒
+        FTAccount *account = [FTAccount accountWithDict:responseObject];
+        // 存储账号信息
+        [FTAccountTool saveAccount:account];
+        
+        // 切换窗口的根控制器
+        UIWindow *window = [UIApplication sharedApplication].keyWindow;
+        [window switchRootViewController];
+
+        
+     
         NSLog(@"请求成功-%@", responseObject);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+        [MBProgressHUD hideHUD];
+
         NSLog(@"请求失败-%@", error);
     }];
 }

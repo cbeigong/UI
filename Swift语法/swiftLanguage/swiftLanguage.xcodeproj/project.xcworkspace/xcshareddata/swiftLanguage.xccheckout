@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0348BC05-B909-451F-9E77-4D26BE5AD97F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>48E8CA755A62363B121D2326C94DE969A05E889E</key>
+		<string>https://github.com/cbeigong/UI.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Swift语法/swiftLanguage/swiftLanguage.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>48E8CA755A62363B121D2326C94DE969A05E889E</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/cbeigong/UI.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>48E8CA755A62363B121D2326C94DE969A05E889E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>48E8CA755A62363B121D2326C94DE969A05E889E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>UI</string>
+		</dict>
+	</array>
+</dict>
+</plist>

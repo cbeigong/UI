@@ -44,14 +44,27 @@
     [self addChildVc:profile title:@"我" image:@"tabbar_profile" selectedImage:@"tababr_profile_selected"];
     
     FTTabBar *tabBar = [[FTTabBar alloc] init];
-    tabBar.delegate = self;
+//    tabBar.delegate = self;
     [self setValue:tabBar forKeyPath:@"tabBar"];
     //    self.tabBar = tabBar;
     
     //    Person *p = [[Person allooc] init];
     //    p.name = @"jack";
     //    [p setValue:@"jack" forKeyPath:@"name"];
+    /*
+     [self setValue:tabBar forKeyPath:@"tabBar"];相当于self.tabBar = tabBar;
+     [self setValue:tabBar forKeyPath:@"tabBar"];这行代码过后，tabBar的delegate就是HWTabBarViewController
+     说明，不用再设置tabBar.delegate = self;
+     */
     
+    /*
+     1.如果tabBar设置完delegate后，再执行下面代码修改delegate，就会报错
+     tabBar.delegate = self;
+     
+     2.如果再次修改tabBar的delegate属性，就会报下面的错误
+     错误信息：Changing the delegate of a tab bar managed by a tab bar controller is not allowed.
+     错误意思：不允许修改TabBar的delegate属性(这个TabBar是被TabBarViewController所管理的)
+     */
 }
 
 
