@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MTRegionViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bno-Jd-LTO">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_cell_rightArrow" translatesAutoresizingMaskIntoConstraints="NO" id="9uP-h6-2YN">
+                            <rect key="frame" x="568" y="11" width="17" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="22" id="MHo-E7-vk7"/>
+                                <constraint firstAttribute="width" constant="17" id="aC8-dR-gGd"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zOq-II-eRb">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                            <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="切换城市" image="btn_changeCity">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="changeCity" destination="-1" eventType="touchUpInside" id="fdP-cb-uuJ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="zOq-II-eRb" firstAttribute="top" secondItem="Bno-Jd-LTO" secondAttribute="top" id="4ZA-4n-93e"/>
+                        <constraint firstAttribute="trailing" secondItem="zOq-II-eRb" secondAttribute="trailing" id="BOW-9R-bYx"/>
+                        <constraint firstAttribute="height" constant="44" id="GB8-db-8Vf"/>
+                        <constraint firstAttribute="centerY" secondItem="9uP-h6-2YN" secondAttribute="centerY" id="RqM-UJ-45d"/>
+                        <constraint firstAttribute="bottom" secondItem="zOq-II-eRb" secondAttribute="bottom" id="apb-f4-fwd"/>
+                        <constraint firstItem="zOq-II-eRb" firstAttribute="leading" secondItem="Bno-Jd-LTO" secondAttribute="leading" id="kZN-Z4-Px8"/>
+                        <constraint firstAttribute="trailing" secondItem="9uP-h6-2YN" secondAttribute="trailing" constant="15" id="xCA-Ee-cgB"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Bno-Jd-LTO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="L9D-6K-H2L"/>
+                <constraint firstAttribute="trailing" secondItem="Bno-Jd-LTO" secondAttribute="trailing" id="k59-h8-J7M"/>
+                <constraint firstItem="Bno-Jd-LTO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="oK1-Nr-8RF"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="403" y="-274"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_changeCity" width="30" height="30"/>
+        <image name="icon_cell_rightArrow" width="17" height="17"/>
+    </resources>
+</document>

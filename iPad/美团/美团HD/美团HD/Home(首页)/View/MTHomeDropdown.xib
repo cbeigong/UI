@@ -10,19 +10,19 @@
             <rect key="frame" x="0.0" y="0.0" width="400" height="382"/>
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="TMp-UZ-cnu" userLabel="从表">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="M9I-sz-DDa" userLabel="主表">
+                    <rect key="frame" x="0.0" y="0.0" width="200" height="382"/>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="FN0-GF-6NC"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="gn4-Pf-fE5"/>
+                    </connections>
+                </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="TMp-UZ-cnu" userLabel="从表">
                     <rect key="frame" x="200" y="0.0" width="200" height="382"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
                         <outlet property="dataSource" destination="iN0-l3-epB" id="meD-NV-WNE"/>
                         <outlet property="delegate" destination="iN0-l3-epB" id="2nQ-6X-PUu"/>
-                    </connections>
-                </tableView>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="M9I-sz-DDa" userLabel="主表">
-                    <rect key="frame" x="0.0" y="0.0" width="200" height="382"/>
-                    <connections>
-                        <outlet property="dataSource" destination="iN0-l3-epB" id="FN0-GF-6NC"/>
-                        <outlet property="delegate" destination="iN0-l3-epB" id="gn4-Pf-fE5"/>
                     </connections>
                 </tableView>
             </subviews>
@@ -43,7 +43,7 @@
                 <outlet property="mainTableView" destination="M9I-sz-DDa" id="U5g-Q3-5Lz"/>
                 <outlet property="subTableView" destination="TMp-UZ-cnu" id="JFE-Fe-OGq"/>
             </connections>
-            <point key="canvasLocation" x="444" y="163"/>
+            <point key="canvasLocation" x="74" y="-32"/>
         </view>
     </objects>
 </document>

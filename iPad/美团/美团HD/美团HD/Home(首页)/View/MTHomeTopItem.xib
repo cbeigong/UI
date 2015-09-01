@@ -7,7 +7,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MTHomeTopItem">
-            <rect key="frame" x="0.0" y="0.0" width="120" height="35"/>
+            <rect key="frame" x="0.0" y="0.0" width="167" height="35"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="15W-Rt-pq1" userLabel="分割线">
@@ -18,7 +18,7 @@
                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="1" id="vpO-Tj-Lxs"/>
                     </constraints>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="标题" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PaD-gX-WHP" userLabel="标题">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="标题" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PaD-gX-WHP" userLabel="标题">
                     <rect key="frame" x="50" y="0.0" width="65" height="15"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="15" id="4it-aU-DJC"/>
@@ -27,7 +27,7 @@
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="子标题" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jzn-Da-LaY">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="子标题" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jzn-Da-LaY">
                     <rect key="frame" x="50" y="14" width="65" height="21"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="21" id="blw-7y-OtW"/>
@@ -36,7 +36,7 @@
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hQ-hC-cTH" userLabel="图标按钮">
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hQ-hC-cTH" userLabel="图标按钮">
                     <rect key="frame" x="6" y="0.0" width="114" height="35"/>
                     <inset key="contentEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
                     <state key="normal" image="icon_district">
@@ -68,8 +68,10 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="iconButton" destination="6hQ-hC-cTH" id="Aac-b1-rdb"/>
+                <outlet property="subtitleLabel" destination="jzn-Da-LaY" id="RXX-2L-dsN"/>
+                <outlet property="titleLabel" destination="PaD-gX-WHP" id="9VK-tP-sku"/>
             </connections>
-            <point key="canvasLocation" x="473" y="371.5"/>
+            <point key="canvasLocation" x="496.5" y="371.5"/>
         </view>
     </objects>
     <resources>

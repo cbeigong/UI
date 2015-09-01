@@ -12,4 +12,9 @@
 + (instancetype)item;
 
 - (void)addTarget:(id)target action:(SEL)action;
+
+
+- (void)setTitle:(NSString *)title;
+- (void)setSubtitle:(NSString *)subtitle;
+- (void)setIcon:(NSString *)icon highIcon:(NSString *)highIcon;
 @end
