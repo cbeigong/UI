@@ -22,6 +22,10 @@
 #import "MTRegion.h"
 #import "MTMetaTool.h"
 #import "MTCity.h"
+#import "MBProgressHUD+MJ.h"
+#import "MJRefresh.h"
+#import "UIView+AutoLayout.h"
+
 
 @interface MTHomeViewController ()
 @property   (nonatomic, weak) UIBarButtonItem *categoryItem;
@@ -48,13 +52,13 @@
 
 @implementation MTHomeViewController
 
-static NSString * const reuseIdentifier = @"Cell";
-
-- (instancetype)init
-{
-    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-    return [self initWithCollectionViewLayout:layout];
-}
+//static NSString * const reuseIdentifier = @"Cell";
+//
+//- (instancetype)init
+//{
+//    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+//    return [self initWithCollectionViewLayout:layout];
+//}
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -62,10 +66,10 @@ static NSString * const reuseIdentifier = @"Cell";
     // self.clearsSelectionOnViewWillAppear = NO;
     // self.view = self.tableView;
     // self.view = self.collectionView.superView;
-    self.collectionView.backgroundColor = MTGlobalBg;
+//    self.collectionView.backgroundColor = MTGlobalBg;
     
     // Register cell classes
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
+//    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
     
     [self setupLeftNav];
     [self setupRightNav];
@@ -114,7 +118,7 @@ static NSString * const reuseIdentifier = @"Cell";
     [topItem setSubtitle:nil];
 //    
 //    // 2.刷新表格数据
-//    [self.collectionView headerBeginRefreshing];
+    [self.collectionView headerBeginRefreshing];
 }
 
 - (void)categoryDidChange:(NSNotification *)notification
@@ -141,7 +145,7 @@ static NSString * const reuseIdentifier = @"Cell";
     [self.categoryPopover dismissPopoverAnimated:YES];
 //    
 //    // 3.刷新表格数据
-//    [self.collectionView headerBeginRefreshing];
+    [self.collectionView headerBeginRefreshing];
 }
 
 - (void)regionDidChange:(NSNotification *)notification
@@ -167,7 +171,7 @@ static NSString * const reuseIdentifier = @"Cell";
     [self.regionPopover dismissPopoverAnimated:YES];
 //    
 //    // 3.刷新表格数据
-//    [self.collectionView headerBeginRefreshing];
+    [self.collectionView headerBeginRefreshing];
 }
 
 - (void)sortDidChange:(NSNotification *)notification
@@ -183,7 +187,7 @@ static NSString * const reuseIdentifier = @"Cell";
     [self.sortPopover dismissPopoverAnimated:YES];
 //    
 //    // 3.刷新表格数据
-//    [self.collectionView headerBeginRefreshing];
+    [self.collectionView headerBeginRefreshing];
 }
 
 
@@ -267,7 +271,26 @@ static NSString * const reuseIdentifier = @"Cell";
     self.navigationItem.rightBarButtonItems = @[mapItem, searchItem];
 }
 
-
+#pragma mark - 实现父类提供的方法
+- (void)setupParams:(NSMutableDictionary *)params
+{
+    // 城市
+    if (self.selectedCityName) {
+        params[@"city"] = self.selectedCityName;
+    }
+    // 分类(类别)
+    if (self.selectedCategoryName) {
+        params[@"category"] = self.selectedCategoryName;
+    }
+    // 区域
+    if (self.selectedRegionName) {
+        params[@"region"] = self.selectedRegionName;
+    }
+    // 排序
+    if (self.selectedSort) {
+        params[@"sort"] = @(self.selectedSort.value);
+    }
+}
 /*
 #pragma mark - Navigation
 
@@ -278,28 +301,28 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 */
 
-#pragma mark <UICollectionViewDataSource>
-
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-#warning Incomplete method implementation -- Return the number of sections
-    return 0;
-}
-
-
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-#warning Incomplete method implementation -- Return the number of items in the section
-    return 0;
-}
-
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
-    
-    // Configure the cell
-    
-    return cell;
-}
-
-#pragma mark <UICollectionViewDelegate>
+//#pragma mark <UICollectionViewDataSource>
+//
+//- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+//#warning Incomplete method implementation -- Return the number of sections
+//    return 0;
+//}
+//
+//
+//- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+//#warning Incomplete method implementation -- Return the number of items in the section
+//    return 0;
+//}
+//
+//- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+//    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+//    
+//    // Configure the cell
+//    
+//    return cell;
+//}
+//
+//#pragma mark <UICollectionViewDelegate>
 
 /*
 // Uncomment this method to specify if the specified item should be highlighted during tracking

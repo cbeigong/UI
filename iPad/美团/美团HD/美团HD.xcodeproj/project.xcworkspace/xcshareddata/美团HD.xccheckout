@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>032855EB-F0CC-457A-95C1-24C7956ECF1D</string>
 	<key>IDESourceControlProjectName</key>
-	<string>美团HD</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>48E8CA755A62363B121D2326C94DE969A05E889E</key>
 		<string>https://github.com/cbeigong/UI.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>iPad/美团/美团HD/美团HD.xcodeproj</string>
+	<string>iPad/美团/美团HD/美团HD.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>48E8CA755A62363B121D2326C94DE969A05E889E</key>
