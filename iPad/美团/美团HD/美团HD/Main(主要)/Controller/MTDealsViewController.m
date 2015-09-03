@@ -16,6 +16,7 @@
 #import "MTConst.h"
 #import "MTDealCell.h"
 #import "MTDetailViewController.h"
+#import "MBProgressHUD+MJ.h"
 @interface MTDealsViewController () <DPRequestDelegate>
 /** 所有的团购数据 */
 @property (nonatomic, strong) NSMutableArray *deals;
@@ -146,6 +147,24 @@ static NSString * const reuseIdentifier = @"deal";
     [self.collectionView footerEndRefreshing];
     
 }
+
+
+- (void)request:(DPRequest *)request didFailWithError:(NSError *)error
+{
+    if (request != self.lastRequest) return;
+    
+    // 1.提醒失败
+    [MBProgressHUD showError:@"网络繁忙,请稍后再试" toView:self.view];
+    
+    // 2.结束刷新
+    [self.collectionView headerEndRefreshing];
+    [self.collectionView footerEndRefreshing];
+    
+    // 3.如果是上拉加载失败了
+    if (self.currentPage > 1) {
+        self.currentPage--;
+    }
+}
 #pragma mark <UICollectionViewDataSource>
 
 
@@ -159,7 +178,6 @@ static NSString * const reuseIdentifier = @"deal";
     // 控制没有数据的提醒
     self.noDataView.hidden = (self.deals.count != 0);
     return self.deals.count;
-    return 0;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {

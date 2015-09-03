@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 @class MTDeal;
+// 此处的模型数据都是通过跟服务器交互获得的
 @interface MTDetailViewController : UIViewController
 @property (nonatomic, strong) MTDeal *deal;
 @end

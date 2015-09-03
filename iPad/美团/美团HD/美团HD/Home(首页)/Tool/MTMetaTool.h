@@ -7,11 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-
+@class MTCategory, MTDeal;
 @interface MTMetaTool : NSObject
 + (NSArray *)cities;
 
 + (NSArray *)categories;
++ (MTCategory *)categoryWithDeal:(MTDeal *)deal;
 
 + (NSArray *)sorts;
 @end

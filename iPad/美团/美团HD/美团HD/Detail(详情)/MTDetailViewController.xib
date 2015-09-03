@@ -8,6 +8,7 @@
             <connections>
                 <outlet property="collectButton" destination="eeN-xK-2Li" id="kWE-mj-rVQ"/>
                 <outlet property="descLabel" destination="01G-dj-fjn" id="KmB-cK-jBm"/>
+                <outlet property="imageView" destination="YbM-29-Izq" id="brK-I7-hKH"/>
                 <outlet property="leftTimeButton" destination="F8Y-jz-fHL" id="zrJ-0M-Bdf"/>
                 <outlet property="loadingView" destination="dyX-a1-cQC" id="kZi-Jg-VL3"/>
                 <outlet property="refundableAnyTimeButton" destination="OTa-Rf-tTL" id="Rut-HP-y7i"/>
@@ -77,13 +78,13 @@
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="标题" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gl-Rw-Brf">
                                     <rect key="frame" x="0.0" y="190" width="370" height="21"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="描述" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01G-dj-fjn">
                                     <rect key="frame" x="0.0" y="221" width="370" height="21"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEl-HC-O3C">
@@ -99,7 +100,7 @@
                                         <action selector="buy" destination="-1" eventType="touchUpInside" id="ADo-7I-Nbg"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVH-Rg-3fe">
+                                <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVH-Rg-3fe">
                                     <rect key="frame" x="188" y="242" width="60" height="60"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="60" id="1Qq-WN-lwy"/>
@@ -108,6 +109,8 @@
                                     <state key="normal" title="Button" image="icon_collect">
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
+                                    <state key="selected" image="icon_collect_highlighted"/>
+                                    <state key="highlighted" image="icon_collect_highlighted"/>
                                     <connections>
                                         <action selector="collect" destination="-1" eventType="touchUpInside" id="nEM-tt-cpE"/>
                                     </connections>
@@ -263,6 +266,7 @@
         <image name="icon_back" width="30" height="30"/>
         <image name="icon_back_highlighted" width="30" height="30"/>
         <image name="icon_collect" width="86" height="87"/>
+        <image name="icon_collect_highlighted" width="86" height="87"/>
         <image name="icon_order_refundable" width="17" height="17"/>
         <image name="icon_order_unrefundable" width="17" height="17"/>
         <image name="placeholder_deal" width="273" height="172"/>
